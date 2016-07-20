@@ -7,7 +7,8 @@ function bindEvents () {
 }
 
 function getBookmarks () {
-    ajax("GET", "api/bookmarks", setBookmarks, updateFlash.bind(this, "", "transparent"));
+    ajax("GET", "api/bookmarks", setBookmarks,
+      updateFlash.bind(this, "", "transparent"));
 }
 
 function setBookmarks (bookmarks) {

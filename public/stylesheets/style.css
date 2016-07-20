@@ -48,6 +48,10 @@ button {
   border-radius: 5px;
 }
 
+button:hover {
+  background-color: lightblue;
+}
+
 .bookmarks {
   width: 400px;
   margin: auto;

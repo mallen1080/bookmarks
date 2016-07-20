@@ -5,7 +5,7 @@ var db = new sqlite3.Database('data.db');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Tablet' });
+  res.render('index', { title: 'Bookmarks' });
 });
 
 router.get('/api/bookmarks', function (req, res, next) {
@@ -28,7 +28,7 @@ router.delete('/api/bookmarks', function (req, res, next) {
   var name = req.query.name;
   var url = req.query.url;
   db.run("DELETE FROM bookmarks WHERE name = ? AND url = ?", [name, url]);
-  
+
   db.all("SELECT * FROM bookmarks", function (err, rows) {
     res.send(rows);
   });
