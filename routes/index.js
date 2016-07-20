@@ -25,7 +25,13 @@ router.post('/api/bookmarks', function (req, res, next) {
 });
 
 router.delete('/api/bookmarks', function (req, res, next) {
+  var name = req.query.name;
+  var url = req.query.url;
+  db.run("DELETE FROM bookmarks WHERE name = ? AND url = ?", [name, url]);
   
+  db.all("SELECT * FROM bookmarks", function (err, rows) {
+    res.send(rows);
+  });
 });
 
 

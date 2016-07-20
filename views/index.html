@@ -1,12 +1,17 @@
+<p id="flash-message"></p>
 <h1>Welcome to the Bookmark App!</h1>
 
-<h3>Your current bookmarks</h3>
-<ul id="bookmark-list"></ul>
+<div class="bookmarks">
+  <h3>Your current bookmarks</h3>
+  <ul id="bookmark-list"></ul>
+</div>
 
-<label for="name">Name</label>
-<input type="text" id="name" name="bookmark[name]">
+<form id="bm-form">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="bookmark[name]">
 
-<label for="url">Url</label>
-<input type="text" id="url" name="bookmark[url]">
+  <label for="url">Url</label>
+  <input type="text" id="url" name="bookmark[url]">
 
-<button id="add-bm">Add Bookmark</button>
+  <button id="add-bm">Add Bookmark</button>
+</form>
