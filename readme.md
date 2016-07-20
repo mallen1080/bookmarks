@@ -9,8 +9,8 @@ This bookmark app is a coding challenge for Tablet Hotels.  It allows a user to:
 
 In a terminal, run:
 
-- git clone https://github.com/mallen1080/tablet-challenge master
-- cd master
+- git clone https://github.com/mallen1080/tablet-challenge
+- cd tablet-challenge
 - npm install
 - npm start
 
