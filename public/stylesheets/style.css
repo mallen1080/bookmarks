@@ -1,4 +1,4 @@
-body, h1, h3, p, div, a, li {
+body, h1, h3, p, div, a, li, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -12,12 +12,18 @@ body, h1, h3, p, div, a, li {
 body {
   padding: 0 50px 50px 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #898989;
 }
 
 #flash-message {
   text-align: center;
-  height: 30px;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  height: 25px;
   margin: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 h1 {
@@ -30,6 +36,16 @@ h1 {
 h3 {
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  padding: 2px 5px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .bookmarks {
@@ -39,20 +55,29 @@ h3 {
 
 #bookmark-list {
   list-style-type: none;
+  margin: 20px 0;
 }
 
 #bookmark-list li {
-  margin: 10px 0;
+  padding: 5px;
+}
+
+#bookmark-list li:hover {
+  background-color: #343434;
+  color: white;
 }
 
 #bookmark-list a {
   display: inline-block;
-  width: 300px;
+  width: 280px;
   text-decoration: none;
-  color: black;
 }
 
 #bm-form {
-  width: 450px;
-  margin: auto;
+  text-align: center;
+}
+
+#bm-form p {
+  text-align: center;
+  margin: 10px 0;
 }

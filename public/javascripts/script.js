@@ -42,7 +42,7 @@ function handleAddBookmark (e) {
   if (name && url && valid(url)) {
     addBookmark(name, url);
   } else {
-    updateFlash('please enter name and valid url', "red");
+    updateFlash('please enter name and valid url (www.example.com)', "red");
   }
 }
 
