@@ -1,6 +1,7 @@
 # Bookmark App
 
-This bookmark app is a coding challenge for Tablet Hotels.  It allows a user to:
+This bookmark app is built using Express.js / Node.js on the backend and
+vanilla JS on the frontend.  It allows a user to:
 - redirect to any bookmark by clicking on the bookmark name
 - add a bookmark by entering the name and url
 - delete and bookmark previously added
@@ -9,7 +10,7 @@ This bookmark app is a coding challenge for Tablet Hotels.  It allows a user to:
 
 In a terminal, run:
 
-- git clone https://github.com/mallen1080/tablet-challenge
+- git clone https://github.com/mallen1080/bookmarks
 - cd tablet-challenge
 - npm install
 - npm start

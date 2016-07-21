@@ -1,3 +1,5 @@
+(function () {
+
 function bindEvents () {
   var addBm = document.getElementById('add-bm');
   addBm.addEventListener('click', handleAddBookmark);
@@ -91,3 +93,5 @@ function ajax (method, path, successCallback, completeCallback) {
 
 getBookmarks();
 bindEvents();
+
+})();
