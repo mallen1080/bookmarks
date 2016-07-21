@@ -11,7 +11,7 @@ vanilla JS on the frontend.  It allows a user to:
 In a terminal, run:
 
 - git clone https://github.com/mallen1080/bookmarks
-- cd tablet-challenge
+- cd bookmarks
 - npm install
 - npm start
 
